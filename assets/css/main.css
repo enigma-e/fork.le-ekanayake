@@ -2650,6 +2650,35 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
+		/* Back to Top Button */
+		#btnBackToTop {
+			display: none;
+			position: fixed;
+			bottom: 10%;
+			right: 30px; /* will be overridden by main.js */
+			z-index: 99;
+			border: none;
+			outline: none;
+			background-image: url("/pages/00-00index/images/sup_double-up_64.png");
+			background-color: hsla(0, 0%, 53%, 0.6);
+			background-repeat: no-repeat;
+			background-size: 75%;
+			background-position: center;
+			overflow: hidden;
+			color: white;
+			cursor: pointer;
+			/* padding: 10px 0; */
+			border-radius: 50%;
+			width: 3.5%;
+			min-width: 30px;
+			aspect-ratio: 1 / 1;
+			transition: background-color 0.2s ease-in-out, right 0.5s ease;
+		}
+		#btnBackToTop:hover {
+			/* background-color: #5ed0b1; */
+			background-color: hsla(163, 53%, 59%, 1);
+		}
+
 /* Features */
 
 	.features article {

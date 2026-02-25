@@ -157,3 +157,77 @@
 		});
 
 })(jQuery);
+
+/* Add move to top functionality */
+(function(){
+	// // Back to Top button functionality
+	// var backToTopButton = document.getElementById("btnBackToTop");
+	
+	// window.onscroll = function() {
+	// 	if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+	// 		backToTopButton.style.display = "block";
+	// 	} else {
+	// 		backToTopButton.style.display = "none";
+	// 	}
+	// };
+	
+	// backToTopButton.onclick = function() {
+	// 	window.scrollTo({
+	// 		top: 0,
+	// 		behavior: 'smooth'
+	// 	});
+	// };
+
+    var backToTopButton = document.getElementById("btnBackToTop");
+    var header = document.getElementById("header");
+    var body = document.body;
+
+    if (!backToTopButton) return;
+
+    function isDesktop() {
+        return window.matchMedia("(min-width: 1025px)").matches;
+    }
+
+    function isHeaderVisible() {
+        // Desktop: header is always visible.
+        // Mobile/tablet: visible only when panel is opened.
+        return isDesktop() || body.classList.contains("header-visible");
+    }
+
+    function updateBackToTopPosition() {
+        if (!header || !isHeaderVisible()) {
+            backToTopButton.style.right = "30px";
+            return;
+        }
+
+        var headerWidth = header.getBoundingClientRect().width || 0;
+        var gap = isDesktop() ? 30 : 20; // a little tighter on mobile panel
+        backToTopButton.style.right = (Math.round(headerWidth) + gap) + "px";
+    }
+
+    function updateBackToTopVisibility() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    window.addEventListener("scroll", updateBackToTopVisibility);
+    window.addEventListener("resize", updateBackToTopPosition);
+    window.addEventListener("orientationchange", updateBackToTopPosition);
+    window.addEventListener("load", function () {
+        updateBackToTopPosition();
+        updateBackToTopVisibility();
+    });
+
+    // Watch body class changes (panel open/close toggles "header-visible")
+    var observer = new MutationObserver(updateBackToTopPosition);
+    observer.observe(body, { attributes: true, attributeFilter: ["class"] });
+
+	// Button action
+    backToTopButton.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+})();

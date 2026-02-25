@@ -1,4 +1,5 @@
 
+/* Video Player */
 document.addEventListener('DOMContentLoaded', function() {
     var playButton = document.createElement('button');
     var resetButton = document.createElement('button');

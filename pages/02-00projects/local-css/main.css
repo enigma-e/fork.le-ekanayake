@@ -5,6 +5,16 @@
     /* height: 240px; */
     overflow: hidden;
 }
+.wrap-im-twoPics {
+    position: relative;
+    left: calc(50% - 250px);
+    /* width: 240px; */
+    /* height: 240px; */
+    /* overflow: hidden; */
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
 
 .wrap-vid-aim2024 {
     position: relative;
