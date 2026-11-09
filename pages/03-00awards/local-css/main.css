@@ -1,20 +1,49 @@
-.wrap-im-onePic {
-    position: relative;
-    margin: 10px 10% 10px 10%; /* top, right, bottom, left */
-    /* left: calc(50% - 120px); */
-    /* width: 240px; */
-    /* height: 240px; */
+.award-announcement {
     display: flex;
-    overflow: hidden;
+    align-items: flex-start;
+    gap: 1.25rem;
 }
-.wrap-im-twoPics {
-    position: relative;
-    margin: 10px 10% 10px 10%; /* top, right, bottom, left */
-    /* left: calc(50% - 250px); */
-    /* width: 240px; */
-    /* height: 240px; */
-    /* overflow: hidden; */
+
+.award-announcement img {
+    flex: none;
+}
+
+@media screen and (max-width: 480px) {
+    .award-announcement {
+        flex-direction: column;
+    }
+}
+
+.award-gallery {
     display: flex;
-    overflow-x: auto;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.award-gallery > figure {
+    flex: 1 1 240px;
+    min-width: 0;
+    margin: 0;
+}
+
+.award-gallery .award-portrait img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+.award-gallery > .award-group {
+    flex-basis: 100%;
+}
+
+.award-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.award-gallery figcaption {
+    margin-top: .35em;
+    font-size: .9em;
 }
