@@ -3,7 +3,7 @@
 	Template - Read Only
 	Free for personal and commercial use under the CCA 3.0 license
 -->
-<html>
+<html lang="en">
 	<head>
 		
 		<!-- Google tag (gtag.js) -->
@@ -18,8 +18,9 @@
 		
 		<title>Lahiru Ekanayake</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.min.css" />
+		<link rel="stylesheet" href="assets/css/accessibility.css" />
 	</head>
 	<body class="is-preload">
 
@@ -36,7 +37,7 @@
 				<a href="/02-00projects.html">Projects</a>
 				<a href="/03-00awards.html">Awards</a>
 			</div>
-			<nav id="nav">
+			<nav id="nav" aria-label="On this page">
 				<ul>
 					<li><a href="#one" class="active">About</a></li>
 					<li><a href="#two">Things I Can Do</a></li>
@@ -46,25 +47,22 @@
 			</nav>
 			<footer>
 				<ul class="icons">
-					<li><a href="https://linkedin.com/in/lahiru-ekanayake" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://linkedin.com/in/lahiru-ekanayake" class="icon brands fa-linkedin" aria-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
 					<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-					<li><a href="https://github.com/enigma-e" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					<li><a href="mailto:le.ekanayake@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://github.com/enigma-e" class="icon brands fa-github" aria-label="GitHub"><span class="label">Github</span></a></li>
+					<li><a href="mailto:le.ekanayake@gmail.com" class="icon solid fa-envelope" aria-label="Email"><span class="label">Email</span></a></li>
 				</ul>
 			</footer>
 		</section>
-
-        <!-- Back to Top Button -->
-        <button id="btnBackToTop" title="Go to top"></button>
 
 		<!-- Wrapper (Main content of the page) -->
 		<div id="wrapper">
 
 			<!-- Main -->
-			<div id="main">
+			<main id="main">
 
 				<!-- Sec: One -->
-				<section id="one">
+				<section id="one" tabindex="-1">
 					<div class="image main" data-position="center" style="height: 320px; overflow: hidden;">
 						<img src="images/main/SIU_Campus_Aerial.jpg" alt="" style="height: 100%; object-fit: cover;" />
 					</div> 
@@ -78,13 +76,13 @@
 				</section>
 
 				<!-- Sec: Two -->
-				<section id="two">
+				<section id="two" tabindex="-1">
 					<div class="container">
-						<h3>Things I Can Do</h3>
+						<h2>Things I Can Do</h2>
 						<p>From the beginning I have been passionate about Electrical and Electronics Engineering, and following list is among the things I have gathered in my skill set as a result of that.</p>
 						<ul class="feature-icons">
-							<li class="icon solid fa-code">MATLAB, LabView, Python, C, Java, SQL</li><br />
-							<li class="icon solid fa-lightbulb">VS Code, NetBeans, CodeBlocks, PyCharm, Arduino</li><br />
+							<li class="icon solid fa-code">MATLAB, LabView, Python, C, Java, SQL</li>
+							<li class="icon solid fa-lightbulb">VS Code, NetBeans, CodeBlocks, PyCharm, Arduino</li>
 							<li class="icon solid fa-book">Linux, PyTorch, Jupyter, Git, ESP-IDF</li>
 							<!-- <li class="icon solid fa-coffee">Drink much coffee</li>
 							<li class="icon solid fa-bolt">Lightning bolt</li>
@@ -94,15 +92,15 @@
 				</section>
 
 				<!-- Sec: Three -->
-				<section id="three">
+				<section id="three" tabindex="-1">
 					<div class="container">
-						<h3>A Few Accomplishments</h3>
+						<h2>A Few Accomplishments</h2>
 						<p>As a researcher, I have been able to publish in a couple of conferences and present my findings in person.</p>
 						<div class="features">
 							<article>
 								<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
 								<!-- <div class="inner"> -->
-								<h5>Dominant Pole Placement in Linear Quadratic Regulators: Application in Automated Design of Gain-Scheduled Control</h5>
+								<h3>Dominant Pole Placement in Linear Quadratic Regulators: Application in Automated Design of Gain-Scheduled Control</h3>
 								<p>L. Ekanayake, A. Komaee<br />
 								2026 American Control Conference (ACC),<br />
 								New Orleans, LA, USA.</p>
@@ -111,7 +109,7 @@
 							<article>
 								<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
 								<!-- <div class="inner"> -->
-								<h5>Noncontact Magnetic Manipulation Using Permanent Magnets: System Architecture and Experimental Validation</h5>
+								<h3>Noncontact Magnetic Manipulation Using Permanent Magnets: System Architecture and Experimental Validation</h3>
 								<p>L. Ekanayake, J. Madhusankha, A. Komaee<br />
 								IECON 2024 - 50th Annual Conference of the IEEE Industrial Electronics Society,<br />
 								Chicago, IL, USA.</p>
@@ -120,7 +118,7 @@
 							<article>
 								<!-- <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 								<div class="inner"> -->
-								<h5>Noncontact Manipulation of Magnetic Particles by a Hexagonal Array of Electromagnets</h5>
+								<h3>Noncontact Manipulation of Magnetic Particles by a Hexagonal Array of Electromagnets</h3>
 								<p>MD. N. Hasan, J. Madhusankha, L. Ekanayake, A. Komaee<br />
 								IECON 2024 - 50th Annual Conference of the IEEE Industrial Electronics Society,<br />
 								Chicago, IL, USA.</p>
@@ -129,7 +127,7 @@
 							<article>
 								<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
 								<!-- <div class="inner"> -->
-								<h5>Noncontact Manipulation of Magnetic Objects with an Array of Permanent Magnets and Linear Servomotors</h5>
+								<h3>Noncontact Manipulation of Magnetic Objects with an Array of Permanent Magnets and Linear Servomotors</h3>
 								<p>L. Ekanayake, J. Madhusankha, A. Komaee<br />
 								2024 IEEE International Conference on Advanced Intelligent Mechatronics (AIM),<br />
 								Boston, MA, USA.</p>
@@ -138,7 +136,7 @@
 							<article>
 								<!-- <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 								<div class="inner"> -->
-								<h5>Steering Magnetic Particles by an Array of Rotatable Permanent Magnets: Control Design and Experimental Verification</h5>
+								<h3>Steering Magnetic Particles by an Array of Rotatable Permanent Magnets: Control Design and Experimental Verification</h3>
 								<p>J. Madhusankha, L. Ekanayake, A. Komaee<br />
 								IECON 2024 - 50th Annual Conference of the IEEE Industrial Electronics Society,<br />
 								Chicago, IL, USA.</p>
@@ -151,27 +149,26 @@
 				<!-- Sec: Five -->
 				<section id="five">
 					<div class="container">
-						<h3 style="display: flex;">
+						<h2 style="display: flex;">
 							<a href="02-00projects.html">Projects <img src="pages/00-00index/images/sup_double-right_48.gif" alt="Go to Projects page" style="height: 65%; vertical-align: middle; padding-bottom: 3%; width: auto;"/></a>
-						</h3>
+						</h2>
 						<!-- <a href="02-00projects.html"></a> -->
 					</div>
 				</section>
 
 				<!-- Sec: Last -->
-				<section id="last">
+				<section id="last" tabindex="-1">
 					<div class="container">
-						<h3>Contact Me</h3>
+						<h2>Contact Me</h2>
 						<p>Should you have any inquiries, feel free to contact me.</p>
 						<ul class="feature-icons">
-							<li class="icon solid fa-envelope"><a href="mailto:le.ekanayake@gmail.com">le.ekanayake@gmail.com</a></li><br />
+							<li class="icon solid fa-envelope"><a href="mailto:le.ekanayake@gmail.com">le.ekanayake@gmail.com</a></li>
 							<li class="icon solid fa-envelope"><a href="mailto:lahiru.ekanayake@siu.edu">lahiru.ekanayake@siu.edu</a></li>
-						<ul class="feature-icons">
+						</ul>
 					</div>
 				</section>
 				
-			</div>
-			<!-- End of div Main -->
+			</main>
 
 			<!-- Footer -->
 			<section id="footer">
@@ -184,12 +181,12 @@
 
 		</div>
 
+		<button id="btnBackToTop" type="button" aria-label="Back to top"></button>
+
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 
