@@ -1,6 +1,7 @@
 :root {
     --text-color: #4a4a4a;
     --teal: #17665b;
+    --mint: #00CEA6;
 }
 
 body {
@@ -19,8 +20,13 @@ header.major h2 {
     color: var(--teal);
 }
 
+a,
+a:hover {
+    border-bottom-color: var(--mint);
+}
+
 #main a:hover {
-    color: var(--teal) !important;
+    color: var(--mint) !important;
 }
 
 #header,
@@ -59,10 +65,6 @@ ul.feature-icons li::before {
     font-size: 2em;
 }
 
-#three article h3 {
-    font-size: .9em;
-}
-
 #btnBackToTop:focus-visible,
 #header a:focus-visible,
 #titleBar a:focus-visible,
@@ -72,25 +74,9 @@ ul.feature-icons li::before {
     box-shadow: inset 0 0 0 2px #fff;
 }
 
-.projects-arrow {
-    display: inline-grid;
-    place-items: center;
-    width: 1.25em;
-    height: 1.25em;
-    vertical-align: middle;
-}
-
 @media (prefers-reduced-motion: no-preference) {
     html {
         scroll-behavior: smooth;
-    }
-
-    .projects-arrow {
-        background: url("../../pages/00-00index/images/sup_double-right_48.gif") center / contain no-repeat;
-    }
-
-    .projects-arrow::before {
-        content: none;
     }
 }
 

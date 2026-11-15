@@ -1,3 +1,27 @@
+.award-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.award-heading h2 {
+    min-width: 0;
+    margin: 0;
+}
+
+.award-badge {
+    flex: none;
+    width: 4rem;
+    height: auto;
+}
+
+.membership-logo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .award-announcement {
     display: flex;
     align-items: flex-start;
@@ -35,6 +59,11 @@
 
 .award-gallery > .award-group {
     flex-basis: 100%;
+}
+
+.award-gallery > .initiation-portrait {
+    flex: 0 1 220px;
+    margin-inline-end: auto;
 }
 
 .award-gallery img {

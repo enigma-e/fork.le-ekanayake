@@ -21,6 +21,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.min.css" />
 		<link rel="stylesheet" href="assets/css/accessibility.css" />
+		<link rel="stylesheet" href="pages/00-00index/local-css/main.css" />
 	</head>
 	<body class="is-preload">
 
@@ -29,9 +30,9 @@
 		<section id="header">
 			<header>
 				<span class="image avatar" style="width: 100px; height: 100px;"><img src="pages/00-00index/images/profile-3.jpg" width="240" height="240" alt="" /></span>
-				<h1 id="logo"><a href="#">Lahiru Ekanayake</a></h1>
-				<p>Graduate Research Assistant in<br />
-				Control and Optimization Engineering</p>
+				<h1 id="logo"><a href="#">Lahiru Ekanayake</a><span class="mobile-specialty"> | Control Systems &amp; Optimization</span></h1>
+				<p><strong class="sidebar-specialty">Control Systems and Optimization</strong>
+				Ph.D. Candidate in Electrical and Computer Engineering</p>
 			</header>
 			<div class="navbar">
 				<a href="/02-00projects.html">Projects</a>
@@ -40,8 +41,8 @@
 			<nav id="nav" aria-label="On this page">
 				<ul>
 					<li><a href="#one" class="active">About</a></li>
-					<li><a href="#two">Things I Can Do</a></li>
-					<li><a href="#three">A Few Accomplishments</a></li>
+					<li><a href="#two">Technical Skills</a></li>
+					<li><a href="#three">Selected Publications</a></li>
 					<li><a href="#last">Contact</a></li>
 				</ul>
 			</nav>
@@ -50,6 +51,7 @@
 					<li><a href="https://linkedin.com/in/lahiru-ekanayake" class="icon brands fa-linkedin" aria-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
 					<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
 					<li><a href="https://github.com/enigma-e" class="icon brands fa-github" aria-label="GitHub"><span class="label">Github</span></a></li>
+					<li><a href="https://scholar.google.com/citations?user=aNhZWyQAAAAJ&amp;hl=en" class="icon solid fa-graduation-cap" aria-label="Google Scholar"><span class="label">Google Scholar</span></a></li>
 					<li><a href="mailto:le.ekanayake@gmail.com" class="icon solid fa-envelope" aria-label="Email"><span class="label">Email</span></a></li>
 				</ul>
 			</footer>
@@ -63,30 +65,53 @@
 
 				<!-- Sec: One -->
 				<section id="one" tabindex="-1">
-					<div class="image main" data-position="center" style="height: 320px; overflow: hidden;">
-						<img src="images/main/SIU_Campus_Aerial.jpg" width="1600" height="1143" alt="" style="height: 100%; object-fit: cover;" />
-					</div> 
+					<header class="home-banner">
+						<div class="home-banner-campus">
+							<div>
+								<p class="home-banner-title">Where my doctoral work took shape</p>
+								<p class="home-banner-location">Southern Illinois University Carbondale</p>
+							</div>
+						</div>
+						<figure class="home-banner-tile">
+							<img src="images/main/SIU_Engineering_Building.webp" width="840" height="596"
+								alt="SIU Engineering Building across Campus Lake" />
+							<figcaption>SIU Engineering · ECBE</figcaption>
+						</figure>
+						<figure class="home-banner-tile home-banner-control">
+							<img src="images/main/Decision_and_Control.svg" width="300" height="122"
+								alt="A mint trajectory starts below a dashed reference line, overshoots slightly, then settles onto it" />
+							<figcaption>Decision and Control</figcaption>
+						</figure>
+					</header>
 					<div class="container">
 						<header class="major">
 							<h2>About Me</h2>
-							<p>I am a PhD candidate from <a href="http://siu.edu">Southern Illinois University</a>.</p>
 						</header>
-						<p>I am currently pursuing a Ph.D. in Electrical and Computer Engineering, specializing in Control and Optimization. I have been with the program since Spring 2022 and am currently working as a research assistant under the supervision of Dr. Arash Komaee.</p>
+						<p class="about-lead">I design and validate control algorithms, including one that guides a magnetic bead along a path without touching it.</p>
+						<p class="about-research">I’m a Ph.D. candidate in Electrical and Computer Engineering at <a href="https://siu.edu">Southern Illinois University</a>, where I joined the program in Spring 2022. In my graduate research with Dr. Arash Komaee, I design advanced controllers for nonlinear systems, with a focus on gain scheduling.</p>
+						<p class="mobile-awards-link"><a href="03-00awards.html">See awards and honors</a></p>
+					</div>
+				</section>
+
+				<!-- Sec: Five -->
+				<section id="five" class="home-link-section">
+					<div class="container">
+						<h2>
+							<a href="02-00projects.html">Projects <span class="home-link-arrow icon solid fa-angle-double-right" aria-hidden="true"></span></a>
+						</h2>
+						<p>See the magnetic manipulator prototype and watch the controller guide a bead along a path.</p>
 					</div>
 				</section>
 
 				<!-- Sec: Two -->
 				<section id="two" tabindex="-1">
 					<div class="container">
-						<h2>Things I Can Do</h2>
-						<p>From the beginning I have been passionate about Electrical and Electronics Engineering, and following list is among the things I have gathered in my skill set as a result of that.</p>
+						<h2>Technical Skills</h2>
+						<p>Over time, I’ve learned a range of languages and tools that give me more ways to tackle a new problem.</p>
 						<ul class="feature-icons">
-							<li class="icon solid fa-code">MATLAB, LabView, Python, C, Java, SQL</li>
-							<li class="icon solid fa-lightbulb">VS Code, NetBeans, CodeBlocks, PyCharm, Arduino</li>
-							<li class="icon solid fa-book">Linux, PyTorch, Jupyter, Git, ESP-IDF</li>
-							<!-- <li class="icon solid fa-coffee">Drink much coffee</li>
-							<li class="icon solid fa-bolt">Lightning bolt</li>
-							<li class="icon solid fa-users">Shadow clone technique</li> -->
+							<li class="icon solid fa-code">MATLAB, LabVIEW, Python, C, Java, SQL</li>
+							<li class="icon solid fa-lightbulb">VS Code, NetBeans, Code::Blocks, PyCharm, Arduino</li>
+							<li class="icon solid fa-book">PyTorch, Jupyter, Git, ESP-IDF, Linux command line</li>
 						</ul>
 					</div>
 				</section>
@@ -94,8 +119,8 @@
 				<!-- Sec: Three -->
 				<section id="three" tabindex="-1">
 					<div class="container">
-						<h2>A Few Accomplishments</h2>
-						<p>As a researcher, I have been able to publish in a couple of conferences and present my findings in person.</p>
+						<h2>Selected Publications</h2>
+						<p>My publications cover control design and several approaches to moving magnetic objects without contact. The <a href="02-00projects.html#mag-manip">noncontact magnetic manipulator project</a> shows the benchtop prototype and includes a controller demonstration.</p>
 						<div class="features">
 							<article>
 								<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
@@ -109,7 +134,7 @@
 							<article>
 								<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
 								<!-- <div class="inner"> -->
-								<h3>Noncontact Magnetic Manipulation Using Permanent Magnets: System Architecture and Experimental Validation</h3>
+								<h3><a href="https://doi.org/10.1109/IECON55916.2024.10905207" target="_blank" rel="noopener">Noncontact Magnetic Manipulation Using Permanent Magnets: System Architecture and Experimental Validation</a></h3>
 								<p>L. Ekanayake, J. Madhusankha, A. Komaee<br />
 								IECON 2024 - 50th Annual Conference of the IEEE Industrial Electronics Society,<br />
 								Chicago, IL, USA.</p>
@@ -118,7 +143,7 @@
 							<article>
 								<!-- <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 								<div class="inner"> -->
-								<h3>Noncontact Manipulation of Magnetic Particles by a Hexagonal Array of Electromagnets</h3>
+								<h3><a href="https://doi.org/10.1109/IECON55916.2024.10905833" target="_blank" rel="noopener">Noncontact Manipulation of Magnetic Particles by a Hexagonal Array of Electromagnets</a></h3>
 								<p>MD. N. Hasan, J. Madhusankha, L. Ekanayake, A. Komaee<br />
 								IECON 2024 - 50th Annual Conference of the IEEE Industrial Electronics Society,<br />
 								Chicago, IL, USA.</p>
@@ -127,32 +152,32 @@
 							<article>
 								<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
 								<!-- <div class="inner"> -->
-								<h3>Noncontact Manipulation of Magnetic Objects with an Array of Permanent Magnets and Linear Servomotors</h3>
+								<h3><a href="https://doi.org/10.1109/AIM55361.2024.10637208" target="_blank" rel="noopener">Noncontact Manipulation of Magnetic Objects with an Array of Permanent Magnets and Linear Servomotors</a></h3>
 								<p>L. Ekanayake, J. Madhusankha, A. Komaee<br />
-								2024 IEEE International Conference on Advanced Intelligent Mechatronics (AIM),<br />
+								2024 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM),<br />
 								Boston, MA, USA.</p>
 								<!-- </div> -->
 							</article>
 							<article>
 								<!-- <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 								<div class="inner"> -->
-								<h3>Steering Magnetic Particles by an Array of Rotatable Permanent Magnets: Control Design and Experimental Verification</h3>
+								<h3><a href="https://doi.org/10.1109/AIM55361.2024.10637085" target="_blank" rel="noopener">Steering Magnetic Particles by an Array of Rotatable Permanent Magnets: Control Design and Experimental Verification</a></h3>
 								<p>J. Madhusankha, L. Ekanayake, A. Komaee<br />
-								IECON 2024 - 50th Annual Conference of the IEEE Industrial Electronics Society,<br />
-								Chicago, IL, USA.</p>
+								2024 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM),<br />
+								Boston, MA, USA.</p>
 								<!-- </div> -->
 							</article>
 						</div>
 					</div>
 				</section>
-				
-				<!-- Sec: Five -->
-				<section id="five">
+
+				<!-- Sec: Six -->
+				<section id="six" class="home-link-section">
 					<div class="container">
-						<h2 style="display: flex;">
-							<a href="02-00projects.html">Projects <span class="projects-arrow icon solid fa-angle-double-right" aria-hidden="true"></span></a>
+						<h2>
+							<a href="03-00awards.html">Awards &amp; Honors <span class="home-link-arrow icon solid fa-angle-double-right" aria-hidden="true"></span></a>
 						</h2>
-						<!-- <a href="02-00projects.html"></a> -->
+						<p>See photos and read about the awards and honors I’ve received.</p>
 					</div>
 				</section>
 
@@ -165,6 +190,14 @@
 							<li class="icon solid fa-envelope"><a href="mailto:le.ekanayake@gmail.com">le.ekanayake@gmail.com</a></li>
 							<li class="icon solid fa-envelope"><a href="mailto:lahiru.ekanayake@siu.edu">lahiru.ekanayake@siu.edu</a></li>
 						</ul>
+						<div class="mobile-online-profiles">
+							<h3>Online Profiles</h3>
+							<ul class="feature-icons">
+									<li class="icon solid fa-graduation-cap"><a href="https://scholar.google.com/citations?user=aNhZWyQAAAAJ&amp;hl=en">Google Scholar</a></li>
+								<li class="icon brands fa-github"><a href="https://github.com/enigma-e">GitHub</a></li>
+								<li class="icon brands fa-linkedin"><a href="https://linkedin.com/in/lahiru-ekanayake">LinkedIn</a></li>
+						</ul>
+						</div>
 					</div>
 				</section>
 				
@@ -175,6 +208,8 @@
 				<div class="container">
 					<ul class="copyright">
 						<li>Lahiru Ekanayake &copy; 2026. All rights reserved.</li>
+						<li><a href="https://fcda83403961100baa63-6b75d3a70c699e63772caac69eefc7e8.ssl.cf5.rackcdn.com/Article467.jpg">SIU campus aerial</a> by Steve Buhman, SIU Carbondale.</li>
+						<li><a href="https://commons.wikimedia.org/wiki/File:SIU_Engineering_Building.jpg">SIU Engineering Building photo</a> by Devout1145, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
 					</ul>
 				</div>
 			</section>
