@@ -13,22 +13,23 @@
 
 		<title>Projects - Lahiru Ekanayake</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.min.css" />
+		<link rel="stylesheet" href="assets/css/accessibility.css" />
         <link rel="stylesheet" href="pages/02-00projects/local-css/main.css" />
 	</head>
 	<body class="is-preload">
         <!-- Header -->
 		<section id="header">
 			<header>
-				<span class="image avatar" style="width: 100px; height: 100px;"><img src="pages/00-00index/images/profile-3.jpg" alt="" /></span>
-				<h1 id="logo"><a href="/">Lahiru Ekanayake</a></h1>
+				<span class="image avatar" style="width: 100px; height: 100px;"><img src="pages/00-00index/images/profile-3.jpg" width="240" height="240" alt="" /></span>
+				<p id="logo"><a href="/">Lahiru Ekanayake</a></p>
 			</header>
 			<div class="navbar">
 				<a href="/">Home</a>
                 <a href="/03-00awards.html">Awards</a>
 			</div>
-			<nav id="nav">
+			<nav id="nav" aria-label="On this page">
 				<ul>
 					<li><a href="#mag-manip" class="active">Magnetic Manipulator</a></li>
                     <li><a href="#social-reward">Behavioral Dynamics</a></li>
@@ -36,38 +37,36 @@
 			</nav>
 			<footer>
 				<ul class="icons">
-					<li><a href="https://linkedin.com/in/lahiru-ekanayake" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/enigma-e" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					<li><a href="mailto:le.ekanayake@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://linkedin.com/in/lahiru-ekanayake" class="icon brands fa-linkedin" aria-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/enigma-e" class="icon brands fa-github" aria-label="GitHub"><span class="label">Github</span></a></li>
+					<li><a href="https://scholar.google.com/citations?user=aNhZWyQAAAAJ&amp;hl=en" class="icon solid fa-graduation-cap" aria-label="Google Scholar"><span class="label">Google Scholar</span></a></li>
+					<li><a href="mailto:le.ekanayake@gmail.com" class="icon solid fa-envelope" aria-label="Email"><span class="label">Email</span></a></li>
 				</ul>
 			</footer>
 		</section>
         
-        <!-- Back to Top Button -->
-        <button id="btnBackToTop" title="Go to top"></button>
-
         <!-- Wrapper (Main content of the page) -->
         <div id="wrapper">
-            <div id="main">
-                <h2>Projects</h2>
+            <main id="main">
+                <h1>Projects</h1>
 
                 <!-- Mag-manip -->
-                <section id="mag-manip">
+                <section id="mag-manip" tabindex="-1">
                     <div class="container">
-                        <h1>Noncontact Magnetic Manipulator</h1>
+                        <h2>Noncontact Magnetic Manipulator</h2>
                         <p>The goal of this project is to drive a magnetic bead along arbitrary paths on a 2D plane. It is achieved by changing the distance of six axially magnetized permanent magnets from the circular workspace.</p>
                         <div class="wrap-im-aim2024">
-                            <img src="pages/02-00projects/images/MagManip-Schem-6mag.png" alt="Magnetic Manipulator Schematic" width="240px"/>
+                            <img src="pages/02-00projects/images/MagManip-Schem-6mag.png" alt="Magnetic Manipulator Schematic" width="240" height="165"/>
                         </div>
                         Control algorithms are developed based on a mathematical model of the magnetic manipulator, and they are experimentally validated using a bench-top prototype.
-                        <!-- <div class="wrap-im-aim2024" style="display: flex; gap: 20px; justify-content: center; width: 75%; overflow-x: auto;"> -->
                         <div class="wrap-im-twoPics">
-                            <img src="pages/02-00projects/images/MagManip-Setup-Full.jpg" alt="Magnetic Manipulator Schematic" width="240px"/>
-                            <img src="pages/02-00projects/images/MagManip-Setup-Top.JPG" alt="Magnetic Manipulator Schematic" width="240px"/>
+                            <img src="pages/02-00projects/images/MagManip-Setup-Full.jpg" alt="Full benchtop prototype with six actuators arranged around the circular workspace" width="240" height="240" loading="lazy"/>
+                            <img src="pages/02-00projects/images/MagManip-Setup-Top.JPG" alt="Overhead view of the circular workspace and the six surrounding magnet assemblies" width="240" height="246" loading="lazy"/>
                         </div>
-                        <p>The video below shows the performance of the magnetic manipulator with a simple linear controller.</p>
+                        <p id="manipulator-demo">The video below shows the performance of the magnetic manipulator with a simple linear controller.</p>
                         <div class="wrap-vid-aim2024">
-                            <video class="vid-aim2024">
+                            <video class="vid-aim2024" controls preload="none" aria-label="Magnetic manipulator demonstration"
+                                aria-describedby="manipulator-demo" poster="pages/02-00projects/images/MagManip-Setup-Full.jpg">
                                 <source src="pages/02-00projects/videos/movie.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
@@ -76,29 +75,28 @@
                 </section>
 
                 <!-- Social Reward -->
-                <section id="social-reward">
+                <section id="social-reward" tabindex="-1">
                     <div class="container">
-                        <h1>Behavioral Dynamics: Under Reward Feedback</h1>
+                        <h2>Behavioral Dynamics Under Reward Feedback</h2>
                         <p>Living systems are continuously challenged with tasks that must balance immediate needs against potential long-term benefits. The brain integrates social, environmental, and physiological cues in order to make decisions that are adaptive and beneficial for survival. This project explores animal social interactions while making trade-offs between physical and social rewards.</p>
                         <div class="wrap-im-aim2024">
-                            <img src="pages/02-00projects/images/social-reward_001.jpg" alt="Social Reward - Setup" width="300px"/>
+                            <img src="pages/02-00projects/images/social-reward_001.jpg" alt="Social Reward - Setup" width="300" height="257" loading="lazy"/>
                         </div>
                         <p>In these tasks, decisions are often influenced by prior outcomes, with animals showing a tendency to favor options that have recently yielded rewards. Beyond this reward-history effect, their behavior is also shaped by preceding choices — a pattern that remains difficult to account for using existing computational frameworks. We focused on developing mathematical models that capture these behavioral patterns.</p>
                     </div>
                 </section>
 
-            </div>
+            </main>
         </div>
+
+        <button id="btnBackToTop" type="button" aria-label="Back to top"></button>
         
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
         <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-        <script src="pages/02-00projects/local-js/main.js"></script>
     
     </body>
 </html>

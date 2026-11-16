@@ -1,0 +1,194 @@
+#header .mobile-specialty {
+    display: none;
+}
+
+#header .sidebar-specialty {
+    display: block;
+    color: #fff;
+    font-style: normal;
+}
+
+.home-banner {
+    display: grid;
+    grid-template-columns: minmax(0, 2.1fr) minmax(0, 1fr);
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: .25rem;
+    min-height: clamp(300px, 32vw, 410px);
+}
+
+.home-banner-campus {
+    grid-row: span 2;
+    display: flex;
+    align-items: flex-end;
+    padding: clamp(1.25rem, 4vw, 3rem);
+    background: radial-gradient(ellipse 125% 115% at bottom left,
+        rgba(0, 0, 0, .82), rgba(0, 0, 0, .6) 30%, rgba(0, 0, 0, .28) 58%, transparent 83%),
+        url("../../../images/main/SIU_Campus_Aerial.jpg") center / cover no-repeat #283d38;
+    text-shadow: 0 1px 2px #000, 0 0 5px #000, 0 2px 12px rgba(0, 0, 0, .9);
+}
+
+.home-banner .home-banner-title {
+    max-width: 19ch;
+    margin: 0;
+    /* color: #a1f1d8; */
+    color: #00CEA6;
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.08;
+    text-wrap: balance;
+}
+
+.home-banner .home-banner-location {
+    margin: .6rem 0 0;
+    color: #fff;
+    font-size: clamp(.95rem, 1.5vw, 1.2rem);
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.home-banner-tile {
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #123a36;
+}
+
+.home-banner-tile img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-banner-tile figcaption {
+    position: absolute;
+    inset: auto 0 0;
+    padding: .4rem .75rem;
+    background: rgba(10, 30, 28, .85);
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.home-banner-control img {
+    padding: .5rem .5rem 2rem;
+    object-fit: contain;
+}
+
+.home-banner-control figcaption {
+    background: #0e302c;
+}
+
+#main > #one > .container {
+    padding-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+#one .major h2 {
+    margin-bottom: .2em;
+}
+
+.about-lead {
+    margin-bottom: .85em;
+    font-size: 1.15em;
+    line-height: 1.5;
+}
+
+#three article h3 {
+    font-size: .9em;
+}
+
+.home-link-section h2 {
+    display: flex;
+    margin-bottom: .25em;
+}
+
+.mobile-awards-link {
+    display: none;
+}
+
+.mobile-online-profiles {
+    display: none;
+}
+
+.home-link-arrow {
+    display: inline-grid;
+    place-items: center;
+    width: 1.25em;
+    height: 1.25em;
+    vertical-align: middle;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .home-link-arrow {
+        display: inline-block;
+        /* Trim the GIF's bottom padding and lower it to match the letter bottoms. */
+        width: .9375em;
+        height: .8625em;
+        vertical-align: -.06em;
+        background: url("../images/sup_double-right_48.gif") center top / 100% auto no-repeat;
+    }
+
+    .home-link-arrow::before {
+        content: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #titleBar .title {
+        display: flex;
+        align-items: center;
+        gap: .3em;
+        padding-inline: .75rem 68px;
+        font-size: clamp(.6875rem, 3.5vw, 1rem);
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+
+    #titleBar .mobile-specialty {
+        font-weight: 400;
+    }
+
+    #main > #one {
+        padding-top: .5rem;
+    }
+
+    .about-research {
+        margin-bottom: .5em;
+    }
+
+    .mobile-awards-link,
+    .mobile-online-profiles {
+        display: block;
+    }
+
+    #last .feature-icons li {
+        display: block;
+        width: 100%;
+        overflow-wrap: anywhere;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #titleBar .title {
+        padding-inline: .5rem 48px;
+    }
+
+    .home-banner {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto auto;
+        min-height: 0;
+    }
+
+    .home-banner-campus {
+        grid-area: 1 / 1 / 2 / -1;
+        min-height: clamp(220px, 55vw, 300px);
+    }
+
+    .home-banner-tile {
+        min-height: clamp(112px, 31vw, 165px);
+    }
+}

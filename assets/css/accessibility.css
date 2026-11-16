@@ -1,0 +1,130 @@
+:root {
+    --text-color: #4a4a4a;
+    --teal: #17665b;
+    --mint: #00CEA6;
+}
+
+body {
+    -webkit-text-size-adjust: auto;
+    text-size-adjust: auto;
+}
+
+body,
+#footer,
+h1, h2, h3, h4, h5, h6,
+header.major h2 + p {
+    color: var(--text-color);
+}
+
+header.major h2 {
+    color: var(--teal);
+}
+
+a,
+a:hover {
+    border-bottom-color: var(--mint);
+}
+
+#main a:hover {
+    color: var(--mint) !important;
+}
+
+#header,
+#titleBar .toggle::before,
+ul.feature-icons li::before {
+    background: var(--teal);
+}
+
+#header .navbar {
+    background: #134c44;
+}
+
+#header a,
+#header > header p,
+#header > footer .icons li a {
+    color: #fff;
+}
+
+#header > nav ul li a.active {
+    color: var(--teal) !important;
+}
+
+.image.avatar img {
+    height: auto;
+}
+
+#header > header #logo {
+    margin: 0;
+    font-size: 1.75em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+#main > h1 {
+    font-size: 2em;
+}
+
+#btnBackToTop:focus-visible,
+#header a:focus-visible,
+#titleBar a:focus-visible,
+#titleBar .toggle:focus-visible::before {
+    outline: 3px solid #222;
+    outline-offset: -4px;
+    box-shadow: inset 0 0 0 2px #fff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #header,
+    #titleBar,
+    #wrapper,
+    #btnBackToTop {
+        transition: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* Keep navigation in the page flow until the menu button is ready. */
+    body:not(.has-mobile-menu) #header {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: none;
+    }
+
+    body:not(.has-mobile-menu) #wrapper {
+        padding-top: 0;
+    }
+
+    .has-mobile-menu #main > section {
+        scroll-margin-top: 44px;
+    }
+
+    #titleBar .toggle {
+        width: 64px;
+        height: 44px;
+        padding: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #header > header #logo {
+        font-size: 1.5em;
+    }
+
+    #main > h1 {
+        font-size: 1.75em;
+    }
+
+    #titleBar .toggle {
+        width: 44px;
+    }
+}
